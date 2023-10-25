@@ -53,7 +53,7 @@ function App() {
                     {/* <div className="relative w-full h-max"> */}
                         <button
                             type="button"
-                            className=" left-1/2 relative -translate-x-1/2 border-2 bg-gray-700 text-white border-black rounded-lg px-2 py-0.5"
+                            className=" left-1/2 relative -translate-x-1/2 border-2 bg-gray-700 text-white border-black rounded-lg px-2 py-0.5 transition duration-100 active:scale-95"
                             onClick={swap}
                         >
                             swap
@@ -69,7 +69,7 @@ function App() {
                             amountDisable
                         />
                     </div>
-                    <button type="submit" className="w-full text-white px-4 py-3 rounded-lg bg-black">
+                    <button type="submit" className="w-full text-white px-4 py-3 rounded-lg bg-black active:scale-95 transition duration-100    ">
                         Convert {from.toUpperCase()} to {to.toUpperCase()}
                     </button>
                 </form>
