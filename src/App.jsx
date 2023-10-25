@@ -50,15 +50,15 @@ function App() {
                             selectCurrency={from}
                         />
                     </div>
-                    <div className="relative w-full h-0.5">
+                    {/* <div className="relative w-full h-max"> */}
                         <button
                             type="button"
-                            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
+                            className=" left-1/2 relative -translate-x-1/2 border-2 bg-gray-700 text-white border-black rounded-lg px-2 py-0.5"
                             onClick={swap}
                         >
                             swap
                         </button>
-                    </div>
+                    {/* </div> */}
                     <div className="w-full mt-1 mb-4">
                         <Input
                             label="to"
@@ -69,7 +69,7 @@ function App() {
                             amountDisable
                         />
                     </div>
-                    <button type="submit" className="w-full text-white px-4 py-3 rounded-lg">
+                    <button type="submit" className="w-full text-white px-4 py-3 rounded-lg bg-black">
                         Convert {from.toUpperCase()} to {to.toUpperCase()}
                     </button>
                 </form>
